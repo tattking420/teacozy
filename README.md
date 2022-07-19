@@ -1,2 +1,2 @@
-# teacozy
-Tea Cozy website 
+# Tea Cozy
+Tea Cozy website - code training - codeacademy project.
