@@ -1,18 +1,196 @@
-body{
+html, body{
     font-family: 'Helvetica', sans-serif;
     background-color: black;
     color: seashell;
     opacity: 0.9;
     font-size: 22px;
+    text-align: center;
 
+}
 
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+}
 /* Nav bar style */
 
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    height: 69px;
+    border-bottom: 1px solid #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: #000;
+}
 
-   
+.logo-left{
+    padding: 0; 
+    margin-left: 10px;
+    height: 50px;
+    cursor: pointer;
+}
 
+.nav-items ul li{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.nav-items ul a {
+    color: white;
+    text-decoration: none;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    box-shadow: inset 0 0 0 0 white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Nav Hover */
+
+
+.nav-items ul a:hover{
+    box-shadow: inset 300px 0 0 0 seashell;
+    color: black;
+}
+
+.nav-items ul a:active{
+    box-shadow: inset 300px 0 0 0 rgb(145, 140, 137);
+    color: black;
+}
+
+@media only screen and (max-width: 642px) {
+    #menu {
+        display: inline;
+        position: relative;
+    }
+    
+    .options {
+        display: none;
+        position: relative;
+    }
+}
 
 /* Hero */
+
+.hero-container-text{
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    align-content: center ;
+    align-items: center;
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-bedford-bizarre.jpg?_gl=1*kjyo7j*_ga*NDE4NDI3NjI2Mi4xNjU2MjkwOTIz*_ga_3LRZM6TM9L*MTY1ODE5OTQyOS4zMi4xLjE2NTgyMDAwMTQuNTk.) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text{
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+}
+
+/* Tea of The Month */
+
+.tea-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+}
+
+
+
+.Images-row-1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.Images-row-2{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.Images-row-1 .item{
+    margin-left: 20px;
+}
+
+.Images-row-2 .item{
+    margin-left: 20px;
+}
+
+
+/* Location */
+
+.container-adress{
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*f9dtgb*_ga*NDE4NDI3NjI2Mi4xNjU2MjkwOTIz*_ga_3LRZM6TM9L*MTY1ODI3NTgxMi4zNS4xLjE2NTgyNzU4NzguNTc.);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    margin-top: 100px;
+}
+
+
+.location-text{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    text-shadow: 2px 2px#000;
+}
+
+.address-row{
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 15px;
+}
+
+.address-row .adress{
+    padding: 10px;
+    background: #000;
+    opacity: 1;
+    color: #fff;
+    flex-basis: 300px;
+    margin: 0 20px;
+}
+
+/* Footer */
+
+.footer-header{
+    height: 200px;
+    margin-top: 40px;
+}
+
+.copyright{
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+
+
+/* this was actually a lot of work holy */
+
+
+
 
 
 
